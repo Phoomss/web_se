@@ -38,12 +38,11 @@ export default function RootLayout({ children }) {
         <meta name="keywords" content="วิศวกรรมซอฟต์แวร์, มหาวิทยาลัยราชภัฏนครปฐม, Software Engineering, Nakhon Pathom, se npru, npru se" />
         <link rel="icon" type="image/png" href="/logo_se_main.png" priority="true" />
       </head>
-
+      
       <body className="bg-gray-100">
-     
+
         <Navbar />
 
-       
         <main className="container mx-auto">
           {children}
         </main>
