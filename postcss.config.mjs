@@ -1,8 +1,16 @@
-import tailwindcss from 'tailwindcss';
-import autoprefixer from 'autoprefixer';
+import daisyui from 'daisyui';
 
-const config = {
-  plugins: [tailwindcss, autoprefixer],
+export default {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [daisyui],
+  daisyui: {
+    themes: ["light", "dark", "cupcake"], // กำหนดธีมที่นี่
+  },
 };
-
-export default config;
