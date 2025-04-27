@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
+    "https://sc.npru.ac.th/sc_major/assets/images/major_cover/1693382011_2c0ee9d91d20a0202d5f.jpg",
+     "https://sc.npru.ac.th/sc_major/assets/images/major_banner/1716485181_0bfa33ce1d136a430a0a.png",
     "https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp",
-    "https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp",
-    "https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp",
-    "https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+    "https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
 ];
 
 const ImageHero = () => {
@@ -26,7 +26,7 @@ const ImageHero = () => {
                 <motion.img
                     key={current}
                     src={images[current]}
-                    className="absolute w-full h-full object-cover"
+                    className="absolute w-full h-full object-cover transition-all"
                     initial={{ opacity: 0, scale: 1.1 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 1.1 }}
@@ -36,10 +36,16 @@ const ImageHero = () => {
 
             {/* ปุ่มควบคุม */}
             <div className="absolute inset-0 flex items-center justify-between px-4">
-                <button onClick={prevSlide} className="bg-black/40 p-3 rounded-full text-white hover:bg-black/60 transition">
+                <button
+                    onClick={prevSlide}
+                    className="bg-black/40 p-3 rounded-full text-white hover:bg-black/60 transition transform hover:scale-110"
+                >
                     ❮
                 </button>
-                <button onClick={nextSlide} className="bg-black/40 p-3 rounded-full text-white hover:bg-black/60 transition">
+                <button
+                    onClick={nextSlide}
+                    className="bg-black/40 p-3 rounded-full text-white hover:bg-black/60 transition transform hover:scale-110"
+                >
                     ❯
                 </button>
             </div>
@@ -49,7 +55,7 @@ const ImageHero = () => {
                 {images.map((_, index) => (
                     <div
                         key={index}
-                        className={`w-3 h-3 rounded-full transition ${index === current ? "bg-white" : "bg-gray-500/60"}`}
+                        className={`w-3 h-3 rounded-full transition-all duration-300 cursor-pointer ${index === current ? "bg-white scale-125" : "bg-gray-500/60"}`}
                         onClick={() => setCurrent(index)}
                     />
                 ))}
