@@ -1,6 +1,26 @@
-import React from 'react';
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const videoList = [
+  {
+    id: 1,
+    title: "วิดีโอนำเสนอหลักสูตรวิศวกรรมซอฟต์แวร์ 1",
+    url: "https://www.youtube.com/embed/BCyOqIaEUQE?start=128"
+  },
+  {
+    id: 2,
+    title: "วิดีโอนำเสนอหลักสูตรวิศวกรรมซอฟต์แวร์ 2",
+    url: "https://www.youtube.com/embed/jXyZb58_eMo"
+  }
+];
 
 export default function FeatureVideo() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <>
       <div className="text-center mb-10">
@@ -14,33 +34,21 @@ export default function FeatureVideo() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="flex justify-center">
-          <div className="relative w-full max-w-3xl aspect-video rounded-3xl overflow-hidden shadow-2xl">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/BCyOqIaEUQE?start=128"
-              title="Software Engineering Presentation 1"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+        {videoList.map((video) => (
+          <div key={video.id} data-aos="fade-up" className="flex justify-center">
+            <div className="relative w-full max-w-3xl aspect-video rounded-3xl overflow-hidden shadow-2xl">
+              <iframe
+                className="w-full h-full"
+                src={video.url}
+                title={video.title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
-        </div>
-
-        <div className="flex justify-center">
-          <div className="relative w-full max-w-3xl aspect-video rounded-3xl overflow-hidden shadow-2xl">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/jXyZb58_eMo"
-              title="Software Engineering Presentation 2"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
+        ))}
       </div>
     </>
-
   );
 }

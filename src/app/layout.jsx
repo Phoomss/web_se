@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import "../styles/globals.css";
 import Footer from "@/components/Footer";
+import 'aos/dist/aos.css';
 
 export const metadata = {
   title: "สาขาวิศวกรรมซอฟต์แวร์ มหาวิทยาลัยราชภัฏนครปฐม",

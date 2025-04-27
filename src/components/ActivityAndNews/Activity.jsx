@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 const activities = [
     {
@@ -41,7 +44,7 @@ export default function ActivityPage() {
             {/* รายการกิจกรรม */}
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {activities.map((activity) => (
-                    <div key={activity.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+                    <div key={activity.id} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300" data-aos="fade-right" >
                         <img
                             src={activity.imageUrl}
                             alt={activity.title}

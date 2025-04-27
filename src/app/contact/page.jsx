@@ -35,7 +35,7 @@ export default function page() {
                         <Phone className="text-[#C70039]" size={28} />
                         <div>
                             <h3 className="text-lg font-semibold mb-1">เบอร์โทรศัพท์</h3>
-                            <p className="text-gray-600">0888-888-8888</p>
+                            <p className="text-gray-600">034-109-300 ต่อ 3297</p>
                         </div>
                     </div>
 

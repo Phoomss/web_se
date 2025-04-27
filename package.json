@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "daisyui": "^5.0.19",
     "framer-motion": "^12.6.5",
     "lucide-react": "^0.487.0",
