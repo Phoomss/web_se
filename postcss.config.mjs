@@ -1,16 +1,7 @@
-import daisyui from 'daisyui';
+const daisyui = require("daisyui");
 
-export default {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [daisyui],
-  daisyui: {
-    themes: ["light", "dark", "cupcake"], // กำหนดธีมที่นี่
-  },
+const config = {
+  plugins: ["@tailwindcss/postcss"],
 };
+
+export default config;
