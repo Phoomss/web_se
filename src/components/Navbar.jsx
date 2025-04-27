@@ -16,7 +16,7 @@ export default function Navbar() {
                     <span className="hidden lg:inline-block mx-2">|</span>
                     <div className="flex items-center gap-2 text-xs">
                         <span>ติดต่อเรา : 0888-888-8888</span>
-                        <a href="#" title="Facebook" className="hover:text-amber-400">
+                        <a href="https://www.facebook.com/softwarenpru" title="Facebook" className="hover:text-amber-400">
                             <Facebook size={16} />
                         </a>
                     </div>
@@ -70,11 +70,11 @@ export default function Navbar() {
                             </li>
 
                             <li>
-                                <Link href="/admission" className="hover:text-[#C70039] transition-colors duration-200">การเข้าศึกษาต่อ</Link>
+                                <Link href="/news-activities" className="hover:text-[#C70039] transition-colors duration-200">ข่าวสารและกิจกรรม</Link>
                             </li>
 
                             <li>
-                                <Link href="/download" className="hover:text-[#C70039] transition-colors duration-200">ดาวน์โหลดเอกสาร</Link>
+                                <Link href="https://pgm.npru.ac.th/se/data/files/%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3SE-64.pdf" className="hover:text-[#C70039] transition-colors duration-200" target='_blank'>ดาวน์โหลดเอกสาร</Link>
                             </li>
 
                             <li>
@@ -131,13 +131,13 @@ export default function Navbar() {
                         </li>
 
                         <li>
-                            <Link href="/admission" className="hover:text-[#C70039] transition-colors duration-200">
-                                การเข้าศึกษาต่อ
+                            <Link href="/news-activities" className="hover:text-[#C70039] transition-colors duration-200">
+                                ข่าวสารและกิจกรรม
                             </Link>
                         </li>
 
                         <li>
-                            <Link href="/download" className="hover:text-[#C70039] transition-colors duration-200">
+                            <Link href="https://pgm.npru.ac.th/se/data/files/%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3SE-64.pdf" target='_blank' className="hover:text-[#C70039] transition-colors duration-200">
                                 ดาวน์โหลดเอกสาร
                             </Link>
                         </li>
