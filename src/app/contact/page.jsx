@@ -43,7 +43,7 @@ export default function page() {
                         <Mail className="text-[#C70039]" size={28} />
                         <div>
                             <h3 className="text-lg font-semibold mb-1">อีเมล</h3>
-                            <p className="text-gray-600">se@npru.ac.th</p>
+                            <p className="text-gray-600">senpru@npru.ac.th</p>
                         </div>
                     </div>
                 </div>

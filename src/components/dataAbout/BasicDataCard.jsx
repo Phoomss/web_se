@@ -54,8 +54,9 @@ export default function BasicDataCard() {
           </div>
           <div className="text-center">
             <a
-              href="#"
+              href="https://pgm.npru.ac.th/se/data/files/%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3SE-64.pdf"
               className="inline-block bg-[#C70039] text-white text-lg font-semibold px-6 py-2 rounded-full hover:bg-white hover:text-[#C70039] transition duration-300"
+              target="_blank"
             >
               ดูรายละเอียดหลักสูตร
             </a>

@@ -74,7 +74,7 @@ export default function Navbar() {
                             </li>
 
                             <li>
-                                <Link href="https://pgm.npru.ac.th/se/data/files/%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3SE-64.pdf" className="hover:text-[#C70039] transition-colors duration-200" target='_blank'>ดาวน์โหลดเอกสาร</Link>
+                                <Link href="https://reg.npru.ac.th/registrar/apphome.asp" className="hover:text-[#C70039] transition-colors duration-200" target='_blank'>สมัครเรียน</Link>
                             </li>
 
                             <li>
@@ -137,8 +137,8 @@ export default function Navbar() {
                         </li>
 
                         <li>
-                            <Link href="https://pgm.npru.ac.th/se/data/files/%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3SE-64.pdf" target='_blank' className="hover:text-[#C70039] transition-colors duration-200">
-                                ดาวน์โหลดเอกสาร
+                            <Link href="https://reg.npru.ac.th/registrar/apphome.asp" target='_blank' className="hover:text-[#C70039] transition-colors duration-200">
+                                สมัครเรียน
                             </Link>
                         </li>
 

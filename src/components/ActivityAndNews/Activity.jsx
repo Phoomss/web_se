@@ -65,7 +65,7 @@ export default function ActivityPage() {
             {/* ปุ่มดูทั้งหมด */}
             <div className="text-center mt-12">
                 <a
-                    href="#"
+                    href="/news-activities"
                     className="inline-block bg-[#C70039] text-white font-semibold px-8 py-3 rounded-full hover:bg-[#92002A] transition duration-300"
                 >
                     ดูกิจกรรมทั้งหมด
